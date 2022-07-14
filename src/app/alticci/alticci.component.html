@@ -1,0 +1,15 @@
+<section>
+    <div>
+        <form>
+            <label>Input the number to calculate:</label>
+            <input id="userInput" type="number" [(ngModel)]="inputNumber" name="number" placeholder="Enter number">
+            <input type="submit" value="calculate" (click)="calculate(inputNumber)">
+            <div *ngIf="number !== null">
+                <p>Result: {{ result }}</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
